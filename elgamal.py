@@ -39,7 +39,7 @@ def decrypt(sk,c):
     m = 0
     #a=sk
     #m = (c2/c1^a) % p = (c2 % p) * [(1/c1)^a % p] %p
-    temp = pow(c2,1,p) * pow(mod_inverse(c1, p),sk,p)
+    temp = pow(c[1],1,p) * pow(mod_inverse(c[0], p),sk,p)
     m = pow(temp,1,p)
     
     
