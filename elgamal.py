@@ -4,6 +4,13 @@
 # In[ ]:
 
 
+from elgamal_util import mod_inverse
+import random
+
+from params import p
+from params import g
+
+
 def keygen():
     sk = 0
     pk = 0
